@@ -85,4 +85,17 @@ public class TabelaHashSondagemQuadratica<K,V> {
     public int tamanho() { 
         return tamanho; 
     }
+
+    // Imprime o conteúdo da tabela com sondagem quadrática
+    public void imprimir() {
+        System.out.println("Tabela Hash (Sondagem Quadrática):");
+        for (int i = 0; i < chaves.length; i++) {
+            System.out.print(i + ": ");
+            if (chaves[i] != null) {
+                System.out.println("(" + chaves[i] + " -> " + valores[i] + ")");
+            } else {
+                System.out.println("null");
+            }
+        }
+    }
 }

@@ -93,4 +93,21 @@ public class TabelaHashEncadeamento<K, V> {
     public int tamanho() { 
         return tamanho; 
     }
+
+    // Imprime o conteúdo da tabela hash encadeada para depuração/visualização
+    public void imprimir() {
+        System.out.println("Tabela Hash (Encadeamento):");
+        for (int i = 0; i < tabela.length; i++) {
+            System.out.print(i + ": ");
+            if (tabela[i] != null && !tabela[i].isEmpty()) {
+                StringBuilder sb = new StringBuilder();
+                for (Par<K, V> par : tabela[i]) {
+                    sb.append("(" + par.chave + " -> " + par.valor + ") ");
+                }
+                System.out.println(sb.toString());
+            } else {
+                System.out.println("null");
+            }
+        }
+    }
 }

@@ -81,4 +81,17 @@ public class TabelaHashSondagemLinear<K,V> {
     public int tamanho() { 
         return tamanho; 
     }
+
+    // Imprime a tabela de sondagem linear mostrando índice e par chave/valor
+    public void imprimir() {
+        System.out.println("Tabela Hash (Sondagem Linear):");
+        for (int i = 0; i < chaves.length; i++) {
+            System.out.print(i + ": ");
+            if (chaves[i] != null) {
+                System.out.println("(" + chaves[i] + " -> " + valores[i] + ")");
+            } else {
+                System.out.println("null");
+            }
+        }
+    }
 }

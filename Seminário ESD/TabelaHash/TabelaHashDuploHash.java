@@ -85,4 +85,17 @@ public class TabelaHashDuploHash<K,V> {
     public int tamanho() { 
         return tamanho; 
     }
+
+    // Imprime a tabela de duplo hash mostrando índice e par chave/valor
+    public void imprimir() {
+        System.out.println("Tabela Hash (Duplo Hash):");
+        for (int i = 0; i < chaves.length; i++) {
+            System.out.print(i + ": ");
+            if (chaves[i] != null) {
+                System.out.println("(" + chaves[i] + " -> " + valores[i] + ")");
+            } else {
+                System.out.println("null");
+            }
+        }
+    }
 }
