@@ -6,11 +6,11 @@ public class Principal {
         System.out.println("=== Teste: Encadeamento ===");
         TabelaHashEncadeamento<String, Integer> enc = new TabelaHashEncadeamento<>(5);
 
-        enc.inserir("Arthur", 15);
-        enc.inserir("Leandro", 22);
-        enc.inserir("Cauã", 18);
-        enc.inserir("Lucas", 30);
-        enc.inserir("Mateo", 10);
+        enc.inserir("Arthur", 1);
+        enc.inserir("Leandro", 2);
+        enc.inserir("Cauã", 3);
+        enc.inserir("Lucas", 4);
+        enc.inserir("Mateo", 5);
 
         System.out.println("Valor de 'Leandro': " + enc.buscar("Leandro"));
         enc.remover("Cauã");
@@ -21,11 +21,11 @@ public class Principal {
         System.out.println("\n=== Teste: Sondagem Linear ===");
         TabelaHashSondagemLinear<String, Integer> lin = new TabelaHashSondagemLinear<>(7);
 
-        lin.inserir("Arthur", 15);
-        lin.inserir("Leandro", 22);
-        lin.inserir("Cauã", 18);
-        lin.inserir("Lucas", 30);
-        lin.inserir("Mateo", 10);
+        lin.inserir("Arthur", 1);
+        lin.inserir("Leandro", 2);
+        lin.inserir("Cauã", 3);
+        lin.inserir("Lucas", 4);
+        lin.inserir("Mateo", 5);
 
         System.out.println("Valor de 'Lucas': " + lin.buscar("Lucas"));
         lin.remover("Lucas");
@@ -36,11 +36,11 @@ public class Principal {
         System.out.println("\n=== Teste: Sondagem Quadrática ===");
         TabelaHashSondagemQuadratica<String, Integer> quad = new TabelaHashSondagemQuadratica<>(7);
 
-        quad.inserir("Arthur", 15);
-        quad.inserir("Leandro", 22);
-        quad.inserir("Cauã", 18);
-        quad.inserir("Lucas", 30);
-        quad.inserir("Mateo", 10);
+        quad.inserir("Arthur", 1);
+        quad.inserir("Leandro", 2);
+        quad.inserir("Cauã", 3);
+        quad.inserir("Lucas", 4);
+        quad.inserir("Mateo", 5);
 
         System.out.println("Valor de 'Mateo': " + quad.buscar("Mateo"));
         quad.remover("Mateo");
@@ -51,11 +51,11 @@ public class Principal {
         System.out.println("\n=== Teste: Duplo Hash ===");
         TabelaHashDuploHash<String, Integer> dup = new TabelaHashDuploHash<>(7);
 
-        dup.inserir("Arthur", 15);
-        dup.inserir("Leandro", 22);
-        dup.inserir("Cauã", 18);
-        dup.inserir("Lucas", 30);
-        dup.inserir("Mateo", 10);
+        dup.inserir("Arthur", 1);
+        dup.inserir("Leandro", 2);
+        dup.inserir("Cauã", 3);
+        dup.inserir("Lucas", 4);
+        dup.inserir("Mateo", 5);
 
         System.out.println("Valor de 'Arthur': " + dup.buscar("Arthur"));
         dup.remover("Arthur");
